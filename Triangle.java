@@ -13,4 +13,11 @@ public class Triangle{
   public double getPerimeter(){
     return (v1.distanceTo(v2)+v1.distanceTo(v3)+v2.distanceTo(v3));
   }
+  public double getArea(){
+    double side1=v1.distanceTo(v2);
+    double side2=v1.distanceTo(v3);
+    double side3=v2.distanceTo(v3);
+    double semiper=(getPerimeter())/2;
+    return Math.sqrt(semiper*(semiper-side1)*(semiper-side2)*(semiper-side3));
+  }
 }

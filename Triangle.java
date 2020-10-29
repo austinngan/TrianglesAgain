@@ -20,4 +20,16 @@ public class Triangle{
     double semiper=(getPerimeter())/2;
     return Math.sqrt(semiper*(semiper-side1)*(semiper-side2)*(semiper-side3));
   }
+  public String classify(){
+    double side1=Math.round((v1.distanceTo(v2))*10000.0)/10000.0;
+    double side2=Math.round((v1.distanceTo(v3))*10000.0)/10000.0;
+    double side3=Math.round((v2.distanceTo(v3))*10000.0)/10000.0;
+    if ((side3==side2)&&(side2==side1)){
+      return "Equilateral";
+    }
+    if (((side3==s2)&&(side2!=s1))||((side1==s2)&&(side1!=side3))||((side1==side3)&&(side1!=side2))){
+      return "Isosceles";
+    }
+    return "Scalene";
+  }
 }

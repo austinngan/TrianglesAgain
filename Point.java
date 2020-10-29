@@ -4,4 +4,10 @@ public class Point{
     x=X;
     y=Y;
   }
+  public double getX(){
+    return x;
+  }
+  public double getY(){
+    return y;
+  }
 }

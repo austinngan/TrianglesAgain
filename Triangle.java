@@ -27,7 +27,7 @@ public class Triangle{
     if ((side3==side2)&&(side2==side1)){
       return "Equilateral";
     }
-    if (((side3==s2)&&(side2!=s1))||((side1==s2)&&(side1!=side3))||((side1==side3)&&(side1!=side2))){
+    if (((side3==side2)&&(side2!=side1))||((side1==side2)&&(side1!=side3))||((side1==side3)&&(side1!=side2))){
       return "Isosceles";
     }
     return "Scalene";

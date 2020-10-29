@@ -10,5 +10,9 @@ public class Tester{
     System.out.println(a.distanceTo(b));
     System.out.println(a.equals(c));
     System.out.println(s1.getPerimeter());
+    System.out.println(s1.classify());
+    System.out.println(s1.toString());
+    System.out.println(s1.getArea());
+    System.out.println(s1.setVertex(1,c));
   }
 }

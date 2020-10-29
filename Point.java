@@ -17,4 +17,7 @@ public class Point{
   public double distanceTo(Point other){
     return (Math.sqrt(((other.x-x)*(other.x-x))+((other.y-y)*(other.y-y))));
   }
+  public boolean equals(Point other){
+    return ((other.x==x)&&(other.y==y));
+  }
 }
